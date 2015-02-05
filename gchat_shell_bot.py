@@ -61,7 +61,7 @@ class MUCBot(sleekxmpp.ClientXMPP):
             msg.reply(reply).send()
           else:
             time.sleep(random.uniform(0.4, 2.45))
-            reply = random.choice(['what?', 'huh..', 'mmmmm', 'I don\'t get it'])
+            reply = random.choice(['You\'re making me so moist', 'it\'s like duncan hines cake mix in my underwear right now', 'Lonely pete for class president', 'My grandfather is incontenent', 'Who want\'s to play Neptune, king of the sea', 'my balls are people too', 'Who here want\'s to get around clown town, I get around', 'I\'m from New York'])
             msg.reply(reply).send()
 
   # reply to nick_name mentions
