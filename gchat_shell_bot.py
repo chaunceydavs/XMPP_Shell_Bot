@@ -56,6 +56,8 @@ class MUCBot(sleekxmpp.ClientXMPP):
   def message(self, msg):
       if msg['type'] in ('chat', 'normal'):
           body = msg['body']
+          if body and body[0] == 'Who are you?'
+            reply = 'The internet'
           if body and body[0] == CMD_TOKEN:
             reply = self.run_command(body.lstrip(CMD_TOKEN))
             msg.reply(reply).send()
